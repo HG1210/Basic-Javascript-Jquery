@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Javascript</h1>
+    </header>
+    
+    <script src="sam.js"></script>
+    
+    <p id="learn"><b>The Following Content Will Change Just By The Click</b></p>
+    <button type="button" onclick='document.getElementById("learn").innerHTML="Javascript On The Way"'>Click Me</Button>
+    <p id="demo"></p>
+    <script>
+        //String 
+    // String Slice contains only Start and End position it won't display the end character alphabets  
+    var p1=prompt("Enter Your Name");
+    document.write("The Following prompt is going to be print here:-",p1);
+    alert("Creole Studios")
+    let v8="Ducati, BMW, Benz";
+    let v9= v8.slice(7,11);
+    //The counting takes places from the end of the string 
+    let v10=v8.slice(-9);
+    document.getElementById("demo").innerHTML= v9 + '<br>'+ v10; 
+
+   
+   
+    </script>
+        
+    
+</html>
