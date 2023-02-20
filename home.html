@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        header {
+            background: linear-gradient(rgb(45, 45, 167), rgb(115, 52, 52));
+            color: white;
+            position:fixed;
+            top: 0;
+            width: 100%;
+            font-family: 'Times New Roman', Times, serif;
+            font-variant: small-caps;
+            display: inline-flex;
+            padding: 12px 21px;
+            text-indent: 30px;
+            cursor: pointer;
+        }
+
+        .popPictureParent {
+            position: relative;
+            display: block;
+            height: auto;
+            width: 100%;
+
+        }
+
+        .popPicture img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: black;
+        }
+
+        .centered {
+            position: absolute;
+            left: 40%;
+            transform: translate(-160%, -2200%);
+            color: rgb(213, 61, 61);
+            font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-variant: small-caps;
+        }
+
+        #text {
+            position: absolute;
+            left: 20%;
+            transform: translate(-230px, -580px);
+            text-align: left;
+            font-size: 50px;
+            font-variant: small-caps;
+        }
+
+        #text1 {
+            position: absolute;
+            text-align: left;
+            left: 20%;
+            transform: translate(-220px, -500px);
+        }
+
+        .column {
+
+            width: 33.3%;
+            margin-bottom: 50px;
+            padding: 10px;
+            margin-left: -10px;
+            margin-top: 100px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 35px;
+            margin-bottom: 30px;
+
+        }
+
+        .title {
+            color: grey;
+        }
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-20%);
+        
+        }
+
+        .icon-bar a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            font-size: 25px;
+            background-color:whitesmoke;
+        }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+    <div id="top">
+        <div class="popPictureParent">
+            <div class="popPicture">
+                <img src="Background.avif">
+            </div>
+            <header>
+                <a href="home.html" style="color:white;font-size:20px;text-decoration: none; ">Home
+                </a>
+
+                <a href="Form.html" style="color:white;font-size:20px;text-decoration: none; ">Intern Details
+                </a>
+
+                <a href="tp.html" style="color:white;font-size:20px;text-decoration: none; ">About Me
+                </a>
+                <a href="pricing.html" style="color:white;font-size:20px;text-decoration: none; ">Pricing
+                </a>
+            </header>
+            <div class="container">
+                <div class="centered">
+                    <b>--> Committed To Success <br></b>
+                </div>
+                <p id="text">
+                    <b>We Help To Grow Your Business</b>
+                </p>
+                <p id="text1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illum vitae culpa dolor sed vel.<br>
+                    Quia
+                    a
+                    libero iure in nisi, odit assumenda fugit saepe. Natus est dolore eligendi blanditiis.
+                </p>
+            </div>
+        </div>
+        <br><br>
+
+        <h3 style="font-variant: small-caps; font-size: 50px; position: relative;left: 80px;">Our Services</h3>
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-4" style="border:4px groove; padding:20px;">
+                    <img src="pics/EPC.png" alt="Best"
+                        style="width:50%;  border-radius: 30%; background-color: rgb(140, 101, 173);">
+                    <h3 style="font-variant: small-caps;">Strategy Planning</h3>
+                    <p class="cont10" style="text-align:left ;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Esse in sunt unde dolor consequuntur placeat quas nemo natus iure tempora cupiditate molestiae,
+                        consectetur impedit, accusantium nostrum ullam! Quasi, architecto eaque?</p>
+                </div>
+                <div class="col-4" style="padding:20px;">
+                    <img src="pics/Best.png" alt="EPC"
+                        style="width:50%;  border-radius: 30%; background-color: rgb(43, 39, 145);">
+                    <h3 style="font-variant: small-caps;">Insurance Service</h3>
+                    <p class="cont10" style="text-align:left ;">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Sapiente officia illum quae repellendus assumenda autem!</p>
+                </div>
+                <div class="col-4" style="border: 4px groove; padding: 20px;">
+                    <img src="pics/Solar.png" alt="Solar"
+                        style="width:50%; border-radius: 30%; background-color: rgb(63, 11, 110);">
+                    <h3 style="font-variant: small-caps;">Audit & Evaluation</h3>
+                    <p clas="cont10" style="text-align:left ;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Sed
+                        iure, earum ut corporis tempora, sint, sunt dolorem asperiores quo reprehenderit aperiam
+                        architecto
+                        porro. Et pariatur laboriosam accusamus facere aliquam delectus!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container"><br><br><br>
+            <div id="bg" style="background-color: antiquewhite;">
+                <div class="row" style="left:40px;padding-left:30px;padding-top: 30px;padding-bottom: 30px;">
+                    <div class="col-4">
+                        <img src="pics/about.png.webp" alt="Best" />
+                    </div>
+                    <div class="col-7" style="background-color:lightblue; margin-left:50px;">
+                        <p
+                            style="font-variant: small-caps; font-size: 20px;transform: translate(-250px,180px); color: rgb(213, 61, 61);">
+                            <b>-->Our Top Services</b>
+                        </p>
+                        <h3 style="font-variant: small-caps;font-size: 40px; transform: translate(-170px,180px);">
+                            Our Best Services</h3>
+                        <p style="text-align:left;padding-top: 200px;">->Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Dolor non placeat eligendi eaque.
+                            Tempore assumenda enim possimus aliquid distinctio ut eligendi provident, officiis<br>
+                            numquam
+                            omnis?
+                        </p>
+                        <p style="text-align: left;">->Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt ad assumenda, magni
+                            architecto explicabo tenetur accusantium fugit, quis eius ducimus et laudantium eaque
+                            corporis praesentium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="desg"
+        style=" text-align: left; background-color: rgb(215, 48, 48); color: white;display:flex; padding: 50px;">
+        <br><br>
+        <h3 style="font-variant: small-caps; font-size:50px;">Are You Searching <Br>
+            For a First-Class Consultant?
+        </h3>
+        <a href="home.html" style="margin-left:400px;margin-top: 50px;">
+            <button type="button" class="btn btn-dark" style="font-size:25px;font-variant: small-caps;">More About
+                Us</button>
+        </a>
+    </div>
+
+
+    <div class="container" style="padding:100px">
+        <div class="row">
+            <div class="col-3" style="border: 5px groove; border-radius: 25px;">
+                <h3 style="font-variant: small-caps; font-size: 50px;">5</h3>
+                <p style="font-size: 28px;font-variant: small-caps;">Projects Completed</p>
+            </div>
+            <div class="col-3">
+                <h3 style="font-variant: small-caps; font-size: 52px;">2</h3>
+                <p style="font-size: 28px;font-variant: small-caps;">Cups of Coffee</p>
+
+            </div>
+            <div class="col-3" style="border: 5px groove; border-radius: 25px;padding-left:10px">
+                <h3 style="font-variant: small-caps; font-size: 48px;">450</h3>
+                <p style="font-size: 28px;font-variant: small-caps;">Followers</p>
+
+            </div>
+            <div class="col-3">
+                <h3 style="font-variant: small-caps; font-size: 50px;">10</h3>
+                <p style="font-size: 28px;font-variant: small-caps;">Resources</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="backgd" style=" background:linear-gradient(rgb(170, 228, 233), rgb(156, 37, 37));">
+        <h3 style="font-variant: small-caps;font-size: 45px; transform: translate(60px,60px); color:black;">
+            About Me</h3>
+        <div class="row" style="margin: 40px;
+    margin-left: 30px;
+     margin-top: -20px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10">
+                        <div class="column">
+                            <div class="card">
+                                <img src="harsh12.png" alt="Jane" style="width: 80%;  margin: 30px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container" style="margin-left: 400px; text-align: left;
+             margin-top: -500px; font-variant: small-caps; ">
+                        <h2 style="font-weight:40px;font-family: cursive;color:black;">I'm Harsh Gandhi</h2>
+                        <p class="title" style="color: black;">Web Developer From Gujarat,India.</p>
+                        <p style="font-weight:25px;font-family: cursive;color:white;">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit.Explicabo temporibus minima <br>doloremque nulla accusamus rem
+                            laborum dolor ullam officia mollitia aliquid minus <br> commodi illo soluta iusto nisi,
+                            recusandae ea maiores cumque officiis a excepturi,ab<br> perferendis. Earum, laboriosam. Cum
+                            iusto itaque repellendus voluptatem velit molestias<br> obcaecati ut dignissimos libero
+                            perferendis..</p>
+
+
+
+                        <a href="abt.html" target="_blank">
+                            <button type="button" class="btn btn-dark"
+                                style="font-size:20px;font-variant: small-caps;">Download Cv</button>
+                        </a>
+                        <a href="mailto:harshgandhi831@gmail.com" target="_blank">
+                            <button type="button" class="btn btn-dark"
+                                style="font-size:20px;font-variant: small-caps;">Email</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icon-bar">
+        <a href="#" class="whatsapp"><i class="fa fa-whatsapp" style="color:green;"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin" style="color:blue;"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter" style="color:rgb(78, 189, 212);"></i></a>
+        <a href="#" class="envelope"><i class="fa fa-envelope" style="color:red;"></i></a>
+    </div>
+
+
+    
+    <footer>
+       
+    </footer>
+</body>
+
+
+</html>
