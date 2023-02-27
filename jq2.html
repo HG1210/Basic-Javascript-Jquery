@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("#b6").click(function () {
+                var div = $("#div12");
+                div.animate({ height: '300px', opacity: '0.4' }, "slow");
+                div.animate({ width: '300px', opacity: '0.8' }, "slow");
+                div.animate({ height: '100px', opacity: '0.4' }, "slow");
+                div.animate({ width: '100px', opacity: '0.8' }, "slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#b7").click(function () {
+                $("#div2").hide(1000);
+                alert("HIDE & SEEK");
+            });
+        });
+        $(document).ready(function () {
+            $("#b8").click(function () {
+                $("#div6").slideUp("slow")
+                    .slideDown("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#b10").click(function () {
+                alert("DOM HTML:-" + $("#test").text());
+            });
+            $("#b11").click(function () {
+                alert("DOM HTML:-" + $("#test").html());
+            });
+        });
+
+        $(document).ready(function () {
+            $("#b12").click(function () {
+                var a1 = $("#fname").val();
+                $("#div10").text("My Name is:-"+a1);
+            });
+        });
+    </script>
+    <button id="b6">Click & Move</button>
+    <div id="div12"
+        style=" background: linear-gradient(rgb(155, 114, 114), rgb(75, 75, 121));height:100px;width:100px;position:absolute;margin-top: 5px;">
+    </div><br>
+
+    <button id="b7" style="margin-top: 120px;">HIDE</button>
+    <p id="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perspiciatis dignissimos unde eos
+        deserunt repellendus voluptate assumenda. Distinctio, hic error voluptatum officiis quam nulla delectus.</p>
+
+    <button id="b8">Click Me(Magic) </button>
+    <div id="div6">
+        Jquery @|HG| CS
+    </div>
+    <br><br>
+    <button id="b10">Show Txt</button>
+    <button id="b11">Show HTML</button>
+    <p id="test">@|Harsh Gandhi| <b>HG</b> Intern At Creole Studios</p><br><br>
+
+    <label for="fname">First name:-</label><br />
+    <input type="text" id="fname" name="fname" placeholder="Enter Your First Name" /><br><br>
+    <button id="b12">Click Me (Values)</button><br><br>
+    <div id="div10"></div>
+</body>
+
+</html>
