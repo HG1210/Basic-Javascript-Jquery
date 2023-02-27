@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("p").dblclick(function () {
+                $(this).hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $("#Hide").click(function () {
+                $("p").hide(500);
+            });
+            $("#Show").click(function () {
+                $("p").show(500);
+            });
+        });
+
+        $(document).ready(function () {
+            $("h5.Intro").click(function () {
+                $(this).hide();
+            });
+        });
+
+        $(document).ready(function () {
+            $("p").click(function () {
+                alert("Jquery On The Way...")
+            });
+        });
+
+        $(document).ready(function () {
+            $("#Tog").click(function () {
+                $("p.Start").toggle(500)
+            });
+        });
+        //FADE IN(used to fade in the hidden elements)
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                $("#div1").fadeIn(2000);
+            });
+        });
+
+        //FADE OUT()
+        $(document).ready(function () {
+            $("#b2").click(function () {
+                $("#div2").fadeOut(2000)
+            });
+        });
+        //FADE TOGGLE(Between fadein & fadeout)
+        $(document).ready(function () {
+            $("#b3").click(function () {
+                $("#div3").fadeToggle("slow")
+                $("#div4").fadeToggle("2000")
+            });
+        });
+        //FADE TO(Fade to given opacity)
+        $(document).ready(function () {
+            $("#b4").click(function () {
+                $("#div5").fadeTo("slow", 0.10)
+            });
+        });
+        $(document).ready(function () {
+            $("button").click(function () {
+                var div = $("div");
+                div.animate({ left: '200px' }, "fast");
+                div.animate({ fontSize: '3em' }, "fast");
+            });
+        }); 
+    
+    </script>
+    <p>@|Harsh Gandhi|
+        <br>Click Me..
+    </p>
+
+    <button id="Hide">Click Me. </button>
+    <button id="Show">Show Me.</button>
+    <p class="Start">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, molestias.</p>
+    <button id="Tog">Hide/Show</button>
+    <h5 class="Intro">#|Intern At Creole Studios|</h5>
+
+    <button id="b1">Fade In</button><br><br>
+    <div id="div1"
+        style="width:80px;height:80px;display:none;background: linear-gradient(red,blue); border-radius: 50px;"></div>
+    <br>
+
+    <button id="b2">Fade Out</button><br><br>
+    <div id="div2" style="width:80px;height:80px;background: linear-gradient(red,blue);"></div><br>
+
+    <button id="b3">Fade Toggle</button><br><br>
+    <div id="div3" style="width:80px;height:80px;background: linear-gradient(red,blue);"></div><br>
+    <div id="div4" style="width:80px;height:80px;background: linear-gradient(red,blue); border-radius: 50px;"></div><br>
+
+    <button id="b4">Fade To</button><br><br>
+    <div id="div5" style="width:80px;height:80px;background: linear-gradient(red,blue); border-radius: 50px;"></div><br>
+    <br>
+    <button id="b5">Animation </button>
+    <div style="background:#9eae6b;height:90px;width:100px;position:absolute;">HG</div>
+    <br><br><br>
+    <br><br><br>
+    
+  
+    
+</body>
+
+</html>
