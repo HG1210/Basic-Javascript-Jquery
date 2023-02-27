@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <div class="container" style="padding:100px">
+        <div class="row">
+            <div class="col-3" style="border: 5px groove; border-radius: 25px;">
+                <h3 class="count"style="font-variant: small-caps; font-size: 50px;">50</h3>
+                <p  style="font-size: 28px;font-variant: small-caps;">Projects Completed</p>
+            </div>
+            <div class="col-3">
+                <h3 class="count "style="font-variant: small-caps; font-size: 52px;">20</h3>
+                <p style="font-size: 28px;font-variant: small-caps;">Cups of Coffee</p>
+
+            </div>
+            <div class="col-3" style="border: 5px groove; border-radius: 25px;padding-left:10px">
+                <h3 class="count" style="font-variant: small-caps; font-size: 48px;">450</h3>
+                <p  style="font-size: 28px;font-variant: small-caps;">Followers</p>
+
+            </div>
+            <div class="col-3">
+                <h3 class="count" style="font-variant: small-caps; font-size: 50px;">10</h3>
+                <p style="font-size: 28px;font-variant: small-caps;">Resources</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="input-group rounded"style="width:200px;float:left"> 
+        <input type="search" class="form-control rounded" placeholder="Search" style="width:550px;"/>
+    </div>
+      
+    <script>
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
