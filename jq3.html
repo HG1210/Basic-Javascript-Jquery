@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .learn {
+            font-variant: small-caps;
+            font-size: 25px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .learn1 {
+            font-variant: small-caps;
+            font-size: 25px;
+            font-family: "Times New Roman", Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //Includes:-text,html,val
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#p1").text("@|Harsh Gandhi|");
+            });
+            $("#btn2").click(function () {
+                $("#p2").html("<b>Intern At Creole Studios</b>");
+            });
+        });
+
+        //Html Content:-append,prepend,before,after
+        $(document).ready(function () {
+            $("#btn3").click(function () {
+                $("#p3").append("<b>Harsh Gandhi </b>");
+            });
+            $("#btn4").click(function () {
+                $("ol").append("<li>MilkShakes</li>");
+            });
+        });
+        $(document).ready(function () {
+            $("#btn5").click(function () {
+                $("#p4").prepend("<b>HG</b>");
+            });
+            $("#btn6").click(function () {
+                $("#div1").prepend("<li>Fresh Juice</li>");
+            });
+        });
+        $(document).ready(function () {
+            $("#btn7").click(function () {
+                $("img").before("|HG|");
+            });
+            $("#btn8").click(function () {
+                $("img").after("@|Harsh|");
+            });
+        });
+        //remove & empty
+        $(document).ready(function () {
+            $("#btn9").click(function () {
+                $("#div2").remove();
+            });
+        });
+        $(document).ready(function () {
+            $("#btn10").click(function () {
+                $("#div3").empty();
+            });
+        });
+        $(document).ready(function () {
+            $(this).click(function () {
+                $("h3,#p12").addClass("learn");
+            });
+        });
+    </script>
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, labore!
+    </p>
+    <p id="p2">Lorem ipsum dolor sit amet.</p>
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show Html</button><br /><br />
+
+    <p id="p3">The Intern:-</p>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ol>
+    <button id="btn3">Append</button>
+    <button id="btn4">Append Listed item</button><br />
+
+    <p id="p4">The Intern</p>
+    <div id="div1">
+        <li>Coffee</li>
+        <li>MilkShakes</li>
+    </div>
+    <button id="btn5">Prepend</button>
+    <button id="btn6">Prepend Listed item</button><br /><br />
+
+    <img src="intern(img).png" /><br />
+    <button id="btn7">Before</button>
+    <button id="btn8">After</button><br />
+
+    <div id="div2" style="
+        background: linear-gradient(rgb(163, 116, 116), rgb(91, 91, 132));
+        padding: 20px;
+        text-align: center;">
+        <p>
+            Intern At Creole Studios <br />
+            @|Harsh Gandhi|
+        </p>
+    </div>
+    <br />
+    <button id="btn9">Click Me & Remove</button>
+
+    <div id="div3" style="
+        background: linear-gradient(rgb(163, 116, 116), rgb(91, 91, 132));
+        padding: 20px;
+        text-align: center;">
+        <p>
+            Intern At Creole Studios <br />
+            @|Harsh Gandhi|
+        </p>
+    </div>
+    <br />
+    <button id="btn10">Click Me & Empty</button>
+
+    <h3>Jquery</h3>
+    <p id="p12">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />
+        Quidem aliquam quia explicabo molestiae porro non quos iure, vel sit,<br />
+        unde harum maiores commodi fugit minima.
+    </p>
+    
+   
+
+</body>
+
+</html>
