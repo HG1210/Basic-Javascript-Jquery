@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px 5px;
+            margin-left: 10px;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myDIV tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $(this).click(function () {
+                $("#fs1").first().css("font-size", "20px");
+            });
+        });
+        $(document).ready(function () {
+            $("#btn12").click(function () {
+                $("div").last().css("font-variant", "small-caps");
+            });
+        });
+        $(document).ready(function () {
+            $("#btn13").click(function () {
+                $("#fs4 #p8").eq(2).css("font-size", "20px");
+            });
+        });
+        $(document).ready(function () {
+            $("#btn14").click(function () {
+                $("p").filter("#p9").css("font-weight", "bold");
+            });
+        });
+        $(document).ready(function () {
+            $("#btn15").click(function () {
+                $("p").not("#p9").css("text-decoration", "underline");
+            });
+        });
+        $(document).ready(function () {
+            $("#btn16").click(function () {
+                $.get("Regex.txt", function (data, status) {
+                    document.write("Data: " + data + "\nStatus: " + status);
+                });
+            });
+        });
+        
+    </script>
+    <input id="myInput" type="text" placeholder="Search..">
+    <div id="myDIV">
+        <table>
+            <tr>
+                <th>WEEK</th>
+                <th>DATE</th>
+                <th>TITLE</th>
+                <th colspan="7">WEEKLY TOPICS</th>
+            </tr>
+            <tr>
+                <tbody>
+                    <td>1</td>
+                    <td>23rd Jan - 27th Jan</td>
+                    <td>JS & ES basics</td>
+                    <td>What is JavaScript?</td>
+
+                    <td>Variables</td>
+                    <td>Numbers</td>
+                    <td>Strings, String methods</td>
+                    <td>Numbers vs String</td>
+                    <td>Operators</td>
+                    <td>Array, Array methods</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>30th Jan - 3rd Feb</td>
+                <td>JS and ES basics</td>
+                <td>Object, Object prototypes, Object methods</td>
+                <td>Conditions (if-else, else-if, nested if-else, switch, ternary)</td>
+                <td>Loops (for, for-in, for-of, while, do while)</td>
+                <td>OOP in javascript</td>
+                <td>Functions, Scope of functions</td>
+                <td>Classes and constructors</td>
+                <td>What is JSON?</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>6th Feb - 10th Feb</td>
+                <td>JS and ES basics</td>
+                <td>
+                    Asynchronous JavaScript (Synchronous programming, Event handlers,
+                    Callbacks, Promises, Async and Await)
+                </td>
+                <td>Datatypes, Typeconversion</td>
+                <td>Dates, Math, Regular expressions, Variable scope and hoisting</td>
+                <td>Arrow Function</td>
+                <td>This keyword</td>
+                <td>Modules</td>
+                <td>
+                    Environment variables, cookie, collections, filters, Error handling,
+                    gettter & setter
+                </td>
+            </tr>
+            <tr>
+                <td>4 & 5</td>
+                <td>13th Feb - 24th Frb</td>
+                <td>HTML and CSS</td>
+                <td>HTML basics and tags</td>
+                <td>CSS, SCSS</td>
+                <td>Design library and CSS overriding</td>
+                <td>Demo using HTML SCSS</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+
+            <tr>
+                <th>Product</th>
+                <th>Flavors</th>
+            </tr>
+
+            <tr>
+                <th rowspan="3">Milk</th>
+                <th>Almond</th>
+            </tr>
+            <tr>
+                <th>Mango</th>
+            </tr>
+            <tr>
+                <th>Chocolate</th>
+            </tr>
+            <tr>
+                <th colspan="2">These are Exclusive Flavors</th>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div id="fs1" style="border: 5px groove;">
+        <p>@|HG|</p>
+        <p>Intern At Creole Studios</p>
+    </div>
+    <br>
+    <div id="fs1" style="border: 5px groove;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, non.</p>
+    </div>
+    <br><br>
+    <div id="fs3" style="border: 5px groove;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quam dolore nobis saepe, aliquam facere!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, non.</p>
+    </div>
+    <br>
+    <button id="btn12">Click Me(Last)</button>
+    <br><br>
+    <!-- eq(return an element with specific index) -->
+    <div id="fs4" style="border: 5px groove;">
+        <p id="p8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, placeat?</p>
+        <p id="p8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, ullam.</p>
+        <p id="p8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, provident?</p>
+        <p id="p8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, quae.</p>
+        <button id="btn13">Click Me(Index)</button>
+        <!-- filter and Not -->
+    </div>
+    <!-- Element that don't match the criteria are removed from the selection -->
+    <div id="fs5" style="border: 5px groove;">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, placeat?</p>
+        <p id="p9">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, ullam.</p>
+        <p id="p9">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, provident?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, quae.</p>
+        <button id="btn14">Click Me(filter)</button>
+        <!-- opp of filter is NOT -->
+        <!-- That doesn't match the given criteria -->
+        <button id="btn15">Click Me(NOT)</button>
+    </div>
+<br><br>
+<!-- Https Requests (We Will Get The Result back) -->
+<button id="btn16">Click Me (Https)</button> 
+
+</body>
+
+</html>
